@@ -1,53 +1,33 @@
 body {
-   background-image: linear-gradient(
-    to right, /* or 'to bottom' for horizontal stripes, or an angle like 45deg */
-    #DAA928 0%, /* Red starts at 0% */
-    #FB8931 25%, /* Red ends at 25% */
-    #E7541E 35%, /* Blue starts at 25% */
-    #509844 50%, /* Blue ends at 50% */
-    #D03499 60%, /* Green starts at 50% */
-    #1E7BC9 75%, /* Green ends at 75% */
-    #B121B6 85%, /* Yellow starts at 75% */
-    #DD133B 100% /* Yellow ends at 100% */
-  );
+  background-color: rgb(241, 221, 238);
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
 }
 
-html{
-  height: 100%;
-  width: 100%;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 20px;
+}
+
+.container > div {
+  background-color: rgb(255, 255, 255);
+  padding: 12px;
+}
+
+.pic {
+  border: 3px solid rgb(23, 62, 21);
+  width: 320px;
+  height: auto;
+  display: block;
 }
 
 #myCanvas {
-  border-radius: 30px;
-  border: 15px double rgb(0, 0, 0);
-}
-
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  background-color: white;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding-bottom: 60px;
-  border-radius: 30px;
-}
-
-.pic{
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-  border-radius: 30px;
-  border: 15px double rgb(0, 0, 0);
-}
-
-h2{
-  color: black;
-}
-
-#start{
-  text-align: left;
-}
-
-#end{
-  text-align: right;
+  width: 320px;
+  height: 320px;
+  border: 3px solid rgb(23, 62, 21);
+  display: block;
 }
